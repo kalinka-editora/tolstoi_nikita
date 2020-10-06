@@ -1,0 +1,177 @@
+\AtBeginDocument{%
+\begingroup\pagestyle{empty}\raggedleft\parindent0pt
+
+\begin{vplace}[1]
+\centering
+COLEÇÃO BELLA
+\end{vplace}
+
+\pagebreak
+
+\begin{vplace}[1]
+\begin{center}
+{\small Publicado com o apoio do\break Instituto de Tradução (Rússia)}
+
+\bigskip
+
+\includegraphics[width=4cm]{./logo_instituto1.jpg}
+\end{center}
+\end{vplace}
+\vfill
+\clearpage
+
+%% Créditos ------------------------------------------------------
+%\raggedright
+%\linha{copyright}{\copyrightlivro}
+%\linhalayout{edição brasileira©}{Hedra \ifdef{\ano}{\ano}{\the\year}}
+%\linha{tradução©}{\copyrighttraducao}
+%\linha{organização©}{\copyrightorganizacao}
+%\linha{prefácio©}{\copyrightintroducao}
+%\linha{ilustração©}{\copyrightilustracao}\smallskip
+%\linha{título original}{\titulooriginal}
+%\linha{edição consultada}{\edicaoconsultada}
+%\linha{primeira edição}{\primeiraedicao}
+%\linha{agradecimentos}{\agradecimentos}
+%\linha{indicação}{\indicacao}\smallskip
+%\linha{edição}{\edicao}
+%\linha{coedição}{\coedicao}
+%\linha{assistência editorial}{\assistencia}
+%\linha{revisão}{\revisao}
+%\linha{preparação}{\preparacao}
+%\linha{iconografia}{\iconografia}
+%\linha{capa}{\capa}
+%\linha{imagem da capa}{\imagemcapa}\smallskip
+%\linha{ISBN}{\ISBN}\smallskip
+%\begingroup\tiny
+%\ifdef{\conselho}{\conselho}{\relax}
+%\par\endgroup\bigskip%
+
+%\begingroup \tiny%
+
+%\textit{Grafia atualizada segundo o Acordo Ortográfico da Língua\\
+%Portuguesa de 1990, em vigor no Brasil desde 2009.}\\%
+%
+
+%\vfill\textit{Direitos reservados em l\'ingua\\ portuguesa somente para o Brasil}\\\medskip%
+
+%%
+%\textsc{editora hedra ltda.}\\
+%R.~Fradique Coutinho, 1139 (subsolo)\\
+%05416--011 São Paulo \textsc{sp} Brasil\\
+%Telefone/Fax +55 11 3097 8304\\\smallskip
+%editora@hedra.com.br\\
+%www.hedra.com.br\\
+%\bigskip
+%Foi feito o depósito legal.\\\endgroup
+%\pagebreak\raggedleft
+%% Front ---------------------------------------------------------
+% Titulo
+
+
+\movetooddpage
+
+
+\clearpage
+\thispagestyle{empty}
+\vspace*{.3cm}
+\begin{flushright}
+\vspace*{-1.5cm}
+\includegraphics[width=2.2cm]{./LOGOTIPO_KALINKA.jpg}
+\end{flushright}
+
+\begin{vplace}[.8]
+\begin{center}
+\hspace{5cm}{\textlt ALEKSEI TOLSTÓI}
+
+\bigskip
+
+{\Huge\textbf{A infância de Nikita}}
+\end{center}
+\end{vplace}
+
+
+\pagebreak
+\pagestyle{empty}
+\scriptsize
+
+\begin{vplace}[1]
+%\begin{table}[ht!]
+\centering
+\textlt
+\scriptsize
+\begin{tabular}{rl}
+TÍTULO            & A infância de Nikita							   \\[2pt]
+TÍTULO ORIGINAL   & \textit{Dietsvo Nikity}							   \\[2pt]
+AUTOR             & Aleksei Tolstói                          		   \\[2pt]
+TRADUÇÃO do RUSSO & Moissei Mountian 				                   \\[2pt]
+TRADUÇÃO do RUSSO & Irineu Franco Perpetuo			                   \\[2pt]
+PREPARAÇÃO        & Francisco de Araújo                                \\[2pt]
+REVISÃO 		  & Paulo Henrique Pompermaier                         \\[2pt] 
+CAPA e ILUSTRAÇÃO & Fabio Flaks		                                   \\[2pt]
+EDIÇÃO            & Kalinka 		                                   \\[2pt] 
+PRODUÇÃO EXECUTIVA & Hedra                                             \\[2pt]
+FORMATO           & 14 x 21 cm                                         \\[2pt]
+NÚMERO de PÁGINAS & XXX                                                \\[2pt]
+ISBN              & XXXXXXXXXXXXX                                 
+\end{tabular}
+%\end{table}
+\end{vplace}
+%logos
+\vfill
+
+\begin{center}
+\textlt
+\scriptsize
+Copyright © Kalinka, 2020\\[6pt]
+
+Tradução © Moissei Mountian, 2020\\[6pt]
+
+Tradução © Irineu Franco Perpetuo, 2020\\[6pt]
+
+primeira edição, 2020\\[40pt]
+
+
+Essa publicação está de acordo com a reforma ortográfica.\\[6pt]
+A versão se baseou\ldots{}\\[6pt]	
+%\\[20pt]
+\end{center}
+%\ifdef{\logo}{\IfFileExists{\logo}{\hfill\includegraphics[width=3cm]{\logo}\hfill\logoum{}\\ São Paulo\_\the\year}}\includegraphics[width=2.2cm]{./LOGOTIPO_KALINKA.jpg}%\includegraphics[width=2cm]{./logo_hedra.jpg}\hspace{.5cm}{\includegraphics[width=3cm]{logos.pdf}}%\break{} Rio de Janeiro\_\the\year}
+%\end{flushleft}
+%\end{vplace}
+%\includegraphics[width=.4\textwidth,trim=0 0 25 0]{logo.jpg}\\\smallskip
+\par\clearpage\endgroup
+% Resumo -------------------------------------------------------
+\begingroup \footnotesize \parindent0pt \parskip 5pt \thispagestyle{empty} \vspace*{.25\textheight}\mbox{} \vfill
+\baselineskip=.92\baselineskip
+\IfFileExists{PRETAS.tex}{\input{PRETAS}}{% 
+\ifdef{\resumo}{\resumo\par}{}
+\ifdef{\sobreobra}{\sobreobra}{}
+\ifdef{\sobreautor}{\mbox{}\vspace{4pt}\newline\sobreautor}{}
+\ifdef{\sobretradutor}{\newline\sobretradutor}{\relax}
+\ifdef{\sobreorganizador}{\vspace{4pt}\newline\sobreorganizador}{\relax}\par}
+\thispagestyle{empty} \endgroup
+\ifdefvoid{\sobreautor}{}{\pagebreak\ifodd\thepage\paginabranca\fi}
+% Sumário -------------------------------------------------------
+
+%\sumario{}
+%\IfFileExists{INTRO.tex}{\include{INTRO}}
+
+%\IfFileExists{TEXTO.tex}{\mbox{}\include{TEXTO}}
+%\part[{{\def\break{}\titulo}}]{\titulo}
+} % fim do AtBeginDocument
+
+% Finais -------------------------------------------------------
+\AtEndDocument{%
+  %\publicidade
+
+\pagebreak\ifodd\thepage\paginabranca\fi
+
+%\ifdef{\imagemficha}{\IfFileExists{\imagemficha}{\includegraphics[width=.7\textwidth]{\imagemficha}\par}}{}
+
+\mbox{}\vfill\small\thispagestyle{empty}
+\begin{center}
+\begin{minipage}{.8\textwidth}
+\centering\tiny\noindent{}Este livro foi impresso pela primeira vez em outubro de 2020 em papel Pólen Soft 80g. Tipologia:  Big City Grotesque. \begin{center}\normalsize\adforn{64}\end{center}
+\end{minipage}
+\end{center}
+}
